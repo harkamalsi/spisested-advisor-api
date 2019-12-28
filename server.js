@@ -8,7 +8,7 @@ require('dotenv').config();
 
 // Following for creating the express server
 const app = express();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware (cors)
 app.use(cors());
@@ -33,6 +33,6 @@ const companiesRouter = require('./routes/companies');
 app.use('/companies', companiesRouter);
 
 // Starts the server
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on PORT: ${PORT}`);
 });
