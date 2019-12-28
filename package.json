@@ -1,26 +1,19 @@
 {
-  "name": "project-3",
-  "web": "node index.js",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "cypress": "^3.5.0"
+  "scripts": {
+    "start": "nodemon server"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.7.6"
-  },
-  "scripts": {
-    "start": "npm run server",
-    "server": "cd backend && npm start"
-  },
-  "engines": {
-    "node": "10.16.3"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4"
+  }
 }

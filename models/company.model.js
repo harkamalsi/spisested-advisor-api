@@ -13,4 +13,4 @@ const companySchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('Company', companySchema, 'mattilsyn');
+module.exports = mongoose.model('smileys', companySchema);

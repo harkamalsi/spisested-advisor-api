@@ -16,10 +16,12 @@ app.use(cors());
 app.use(express.json());
 
 const uri = process.env.MONGODB_URI;
+console.log(uri);
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  dbName: 'spisested-advisor'
 });
 
 const connection = mongoose.connection;
